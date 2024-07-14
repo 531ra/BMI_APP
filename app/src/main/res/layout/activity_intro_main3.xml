@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#eeeeee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".introMainActivity2">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:layout_constraintVertical_bias="0.09"
+        android:src="@drawable/group_51"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/text1"
+        app:layout_constraintLeft_toLeftOf="@+id/img"
+        app:layout_constraintRight_toRightOf="@+id/img"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="Let’s help you get better!!"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="300dp"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:textColor="#232323"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/text"
+        app:layout_constraintRight_toRightOf="@+id/text"
+        app:layout_constraintHorizontal_bias="0.5"
+         android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="This app can you calculate your body mass index (BMI). Your BMI can help you determine if you are at a healthy weight, or if you need to make changes to your diet or exercise habits."/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#c62ff8"
+        android:padding="20dp"
+        android:text="Click"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="@+id/text1"
+        app:layout_constraintRight_toRightOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintVertical_bias="0.3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
